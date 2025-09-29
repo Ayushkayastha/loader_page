@@ -1,16 +1,31 @@
-# loader_screen
+# loader_page
 
-A new Flutter project.
+A customizable animated loader widget for Flutter apps.
 
-## Getting Started
+## Demo
 
-This project is a starting point for a Flutter application.
+**Demo 1**
 
-A few resources to get you started if this is your first Flutter project:
+![Demo 1](assets/demo1.gif)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+**Demo 2**
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Demo 2](assets/demo2.gif)
+
+## Features
+
+- Animated loading boxes
+- Custom message text
+- Customizable color
+- Replaceable child widget
+
+## Usage
+
+```dart
+import 'package:loader_page/loader_page.dart';
+
+LoaderPage(
+  message: 'Loading ...',
+  color: Colors.black,
+  child: Image.asset('assets/frog.png'),
+);
